@@ -1,6 +1,6 @@
 [![license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://opensource.org/licenses/GPL-2.0)
 
-# rocker_conda_mofa
+# rocker_conda_data_integration
 Docker container on rocker/tidyverse with miniconda3 to run various  data integration tools
 
   *MOFA tool https://github.com/bioFAM/MOFA
