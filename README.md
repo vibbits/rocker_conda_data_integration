@@ -4,8 +4,8 @@
 Docker container on rocker/tidyverse with miniconda3 to run various  data integration tools
 
   *  MOFA tool https://github.com/bioFAM/MOFA
-  *  mixOmics 
-  *  WGCNA
+  *  mixOmics [http://mixomics.org/](http://mixomics.org/)
+  *  WGCNA [WGCNA at Horvath Lab](https://labs.genetics.ucla.edu/horvath/CoexpressionNetwork/Rpackages/WGCNA/)
 
 Visit [rocker-project.org](http://rocker-project.org) for more about available Rocker images, configuration, and use.
 
