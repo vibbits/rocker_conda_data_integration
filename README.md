@@ -4,7 +4,7 @@
 Docker container on rocker/tidyverse with miniconda3 to run various  data integration tools
 
   *MOFA tool https://github.com/bioFAM/MOFA
-  *mixOmics
+  *mixOmics 
   *WGCNA
 
 Visit [rocker-project.org](http://rocker-project.org) for more about available Rocker images, configuration, and use.
@@ -56,7 +56,9 @@ MOFAobject <- runMOFA(MOFAobject, DirOptions, mofaPath = "/opt/conda/bin/mofa")
 Now, MOFA should run and create the hdf5 file in the specified directory.
 
 For MixOmics:
-
+Please visit their web site for a comprehensive overview: [http://mixomics.org/](http://mixomics.org/)
+Example scripts can be downloaded [here](http://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=info:doi/10.1371/journal.pcbi.1005752.s002)
 
 For WGCNA:
 
+A tutorial can be found [here](https://labs.genetics.ucla.edu/horvath/CoexpressionNetwork/Rpackages/WGCNA/Tutorials/)
