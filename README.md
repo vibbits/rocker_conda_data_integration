@@ -3,9 +3,9 @@
 # rocker_conda_data_integration
 Docker container on rocker/tidyverse with miniconda3 to run various  data integration tools
 
-  *MOFA tool https://github.com/bioFAM/MOFA
-  *mixOmics 
-  *WGCNA
+  *  MOFA tool https://github.com/bioFAM/MOFA
+  *  mixOmics 
+  *  WGCNA
 
 Visit [rocker-project.org](http://rocker-project.org) for more about available Rocker images, configuration, and use.
 
