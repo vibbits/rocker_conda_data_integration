@@ -34,4 +34,4 @@ devtools::install_github('PMBio/MOFA', subdir='MOFAtools'); \
 source('http://bioconductor.org/biocLite.R'); \
 biocLite(c('AnnotationDbi', 'impute', 'GO.db', 'preprocessCore')); \
 install.packages('WGCNA'); \
-install.packages('mixOmics') "
+install.packages('mixOmics'); "
