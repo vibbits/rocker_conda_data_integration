@@ -27,10 +27,10 @@ RUN chmod +x /usr/bin/tini
 ENV PATH /opt/conda/bin:$PATH
 RUN conda config --add channels conda-forge
 
-RUN pip install git+git://github.com/PMBio/MOFA
+RUN pip install git+git://github.com/BioFAM/MOFA
 
 RUN R -e " \
-devtools::install_github('PMBio/MOFA', subdir='MOFAtools'); \
+devtools::install_github('BioFAM/MOFA', subdir='MOFAtools'); \
 source('http://bioconductor.org/biocLite.R'); \
 biocLite(c('AnnotationDbi', 'impute', 'GO.db', 'preprocessCore')); \
 install.packages('WGCNA'); \
