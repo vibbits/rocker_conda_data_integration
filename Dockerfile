@@ -30,9 +30,9 @@ RUN conda config --add channels conda-forge
 RUN pip install git+git://github.com/BioFAM/MOFA
 
 RUN R -e " \
-devtools::install_github('BioFAM/MOFA', subdir='MOFAtools'); \
+install.packages('reticulate'); \
 source('http://bioconductor.org/biocLite.R'); \
-biocLite(c('AnnotationDbi', 'impute', 'GO.db', 'preprocessCore')); \
+biocLite(c('AnnotationDbi', 'impute', 'GO.db', 'preprocessCore', 'MultiDataSet', 'MultiAssayExperiment', 'pcaMethods')); \
+devtools::install_github('BioFAM/MOFA', subdir='MOFAtools'); \
 install.packages('WGCNA'); \
-install.packages('mixOmics'); \
-"
+install.packages('mixOmics'); "
