@@ -42,11 +42,12 @@ There are two important settings which you have to adapt so that it works fine i
 
 The variable outfile of the list DirOptions should be set to ``` /home/rstudio/kitematic/<name of model>.hdf5```. In this case, the model file is written to the directory specified when starting the container. In our case this is the current working directory but we specify the folder within the container in DirOptions!
 
-```R
+```
 DirOptions <- list(
   "dataDir" = tempdir(), # Directory to store the input matrices as .txt files, it can be a temporary folder
   "outFile" = "/home/rstudio/kitematic/model.hdf5" # Output file of the model (use hdf5 extension)
 )
+```
 Now, MOFA should run and create the hdf5 file in the specified directory.
 
 For MixOmics:
