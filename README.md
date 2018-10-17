@@ -29,12 +29,12 @@ In order to run the complete vignette of MOFA, you have to define a folder on yo
 So it is recommended to start the Docker instance like this:
 
 ```
-docker run -p 8787:8787 -v $(pwd):/home/rstudio/kitematic vibbioinfocore/rocker_conda_data_integration
+docker run -e PASSWORD=yourpassword -p 8787:8787 -v $(pwd):/home/rstudio/kitematic vibbioinfocore/rocker_conda_data_integration
 ```
 
 On your host, it is using the current working directory as reference folder and maps it to the folder /home/rstudio/kitematic within the container. Note: on the specified folder on your host, you have to have read and write access.
 
-Once you have started the docker instance, you are ready to go by surfing to http://localhost:8787 or eventually http://0.0.0.0:8787 - the login is rstudio and the password rstudio.
+Once you have started the docker instance, you are ready to go by surfing to http://localhost:8787 or eventually http://0.0.0.0:8787 - the login is rstudio and the chosen password.
 
 You can now start the vignette e.g. the [single cell data vignette](https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_scMT.Rmd)
 
@@ -47,12 +47,6 @@ DirOptions <- list(
   "dataDir" = tempdir(), # Directory to store the input matrices as .txt files, it can be a temporary folder
   "outFile" = "/home/rstudio/kitematic/model.hdf5" # Output file of the model (use hdf5 extension)
 )
-```
-Further in the vignette, you can launch the MOFA run on the example dataset. In order to run MOFA from within the RStudio®, you have to specify the location of the exectable, in our case in the container. It is ```/opt/conda/bin/mofa```
-
-```R
-MOFAobject <- runMOFA(MOFAobject, DirOptions, mofaPath = "/opt/conda/bin/mofa")
-```
 Now, MOFA should run and create the hdf5 file in the specified directory.
 
 For MixOmics:
