@@ -56,4 +56,4 @@ Example scripts can be downloaded [here](http://journals.plos.org/ploscompbiol/a
 
 For WGCNA:
 
-A tutorial can be found [here](https://labs.genetics.ucla.edu/horvath/CoexpressionNetwork/Rpackages/WGCNA/Tutorials/)
+A tutorial can be found [here](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/Tutorials/)
