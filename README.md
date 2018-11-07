@@ -1,4 +1,5 @@
 [![license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://opensource.org/licenses/GPL-2.0)
+\n
 In order to start working with the data integration tools container, we need to install Docker. Depending on your operating system - please see docker documentation (https://docs.docker.com/). 
 Depending on your operating system:
 Docker For Mac users (https://docs.docker.com/docker-for-mac/):
