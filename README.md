@@ -1,8 +1,14 @@
 [![license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://opensource.org/licenses/GPL-2.0)
-In order to start working with the data integration tools container, we need to install Docker. Depending on your operating system - please see docker documentation (https://docs.docker.com/). 
+
+In order to start working with the data integration tools container, we need to install Docker. 
+
+# Install Docker
+
 Depending on your operating system:
-Docker For Mac users (https://docs.docker.com/docker-for-mac/):
-Ensure your versions of docker, docker-compose, and docker-machine are up-to-date and compatible with Docker.app. Your output may differ if you are running different versions.
+- Docker For Mac users (https://docs.docker.com/docker-for-mac/):
+
+Ensure your versions of docker, docker-compose, and docker-machine are up-to-date and compatible with Docker.app. 
+Your output may differ if you are running different versions.
 ```
 $ docker --version
 Docker version 18.03, build c97c6d6
@@ -14,14 +20,14 @@ $ docker-machine --version
 docker-machine version 0.14.0, build 9ba6da9
 ```
  
-Docker for Windows users (https://docs.docker.com/docker-for-windows/):
+- Docker for Windows users (https://docs.docker.com/docker-for-windows/):
 1. Open a terminal window (Command Prompt or PowerShell, but not PowerShell ISE).
 2. Run ```$ docker --version``` to ensure that you have a supported version of Docker:
 ```
 > docker --version
 Docker version 18.03.0-ce, build 0520e24
 ```
-Docker for Linux users - follow the instructions on the link: https://docs.docker.com/install/linux/docker-ce/ubuntu/
+- Docker for Linux users - follow the instructions on the link: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 To get started with Docker CE on Ubuntu, make sure you meet the prerequisites (https://docs.docker.com/install/linux/docker-ce/ubuntu/#prerequisites)
 and then install docker (https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce).
 
