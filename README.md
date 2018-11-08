@@ -151,11 +151,19 @@ Then, point your browser to http://localhost:8787. Log in with user/password rst
 
 With this command you will only be able to explore the environment but not yet run the tools successfully. 
 
-So it is recommended to start the Docker instance like this in a command prompt or terminal window:
+So it is recommended to start the Docker instance in a command prompt or terminal window:
+
+For Mac and Linux:
 
 ```
 docker run -e PASSWORD=yourpassword -p 8787:8787 -v $(pwd):/home/rstudio/kitematic vibbioinfocore/rocker_conda_data_integration
 ```
+
+For Windows:
+```
+docker run -e PASSWORD=yourpassword -p 8787:8787 -v %cd%:/home/rstudio/kitematic vibbioinfocore/rocker_conda_data_integration
+```
+
 On your host, it is using the current working directory as reference folder and maps it to the folder /home/rstudio/kitematic within the container. Note: on the specified folder on your host, you have to have read and write access.
 
 Once you have started the docker instance, you are ready to go by surfing to http://localhost:8787 or eventually http://0.0.0.0:8787 - the login is rstudio and the chosen password.
