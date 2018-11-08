@@ -5,6 +5,26 @@ In order to start working with the data integration tools container, we need to 
 # Install Docker
 
 Depending on your operating system:
+- Docker for Mac: 
+
+- Docker for Windows 10: https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+  Please note that only Windows 10 can be used for easy installation and use of Docker.
+  
+  System Requirements:
+
+  - Windows 10 64bit: Pro, Enterprise or Education (1607 Anniversary Update, Build 14393 or later).
+  - Virtualization is enabled in BIOS. Typically, virtualization is enabled by default. This is different from having Hyper-V enabled.       For more detail see Virtualization must be enabled in Troubleshooting.
+  - CPU SLAT-capable feature.
+  - At least 4GB of RAM.
+  
+  More information on: https://docs.docker.com/docker-for-windows/install/#install-docker-for-windows-desktop-app
+
+- Docker for Linux
+
+
+# Testing docker 
+
+Depending on your operating system:
 - Docker For Mac users (https://docs.docker.com/docker-for-mac/):
 
 Ensure your versions of docker, docker-compose, and docker-machine are up-to-date and compatible with Docker.app. 
