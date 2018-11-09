@@ -1,20 +1,14 @@
-## INSTALL MOFA FROM: 
-## https://github.com/bioFAM/MOFA
 ## This protocol is taken from:
 ## http://htmlpreview.github.io/?https://github.com/PMBio/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.html
+
 ## first we load the MOFA library:
-
-#### this is important to solve the missing Pythn dependencies error (if you get one)
-library(reticulate)
-use_python("/opt/conda/bin/python", required=TRUE)
-###
-
+```{r, warning=FALSE, message=FALSE}
+library(MOFAtools)
+```
 ## Attaching package: ‘MOFAtools’
 ## The following object is masked from ‘package:stats’:
 ## predict
 
-# setting the working directory:
-setwd("/Users/oren/VIB/DATA_INTEGRATION/MOFA/VingettRun")
 # cleaning all old variables from the system: 
 rm(list=ls())
 # loading the example data files:
