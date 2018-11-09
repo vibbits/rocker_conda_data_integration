@@ -179,7 +179,7 @@ Example scripts can be downloaded [here](http://journals.plos.org/ploscompbiol/a
 For MOFA:
 In order to run the complete vignette of MOFA, you have to define a folder on your host where MOFA will write the hdf5 file to.
 
-You can now start the vignette e.g. the [single cell data vignette](https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_scMT.Rmd)
+You can now start the vignette e.g. the [vignette](https://github.com/vibbits/rocker_conda_data_integration/blob/master/MOFA_vignette_course.R)
 
 There are two important settings which you have to adapt so that it works fine in the container.
 
