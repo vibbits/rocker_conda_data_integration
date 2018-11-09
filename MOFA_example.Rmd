@@ -1,5 +1,4 @@
 ---
-https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.Rmd
 title: " Vignette illustrating the use of MOFA on the CLL data"
 author: "Britta Velten and Ricard Argelaguet"
 date: "`r Sys.Date()`"
@@ -49,13 +48,11 @@ mae_CLL <- MultiAssayExperiment(
   experiments = CLL_data, 
   colData = CLL_covariates
 )
-
-
+```
 ## option 3: bring your own data
 If one wants to use their own data 
 I suggest using the magrittr package to create data list
 for example if we have 3 sets of omics data: 
-
 ```{r}
 library(magrittr)
 
@@ -77,7 +74,6 @@ MATS2 <- list(GEdata=MATS$GEdata %>% as.matrix, MetabData=MATS$MetabData %>% as.
 ls(MATS2)
 str(MATS2)
 ```
-
 # Build the MOFA object
 MOFAobject <- createMOFAobject(mae_CLL)
 MOFAobject
