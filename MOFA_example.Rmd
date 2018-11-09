@@ -1,3 +1,4 @@
+---
 https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.Rmd
 title: " Vignette illustrating the use of MOFA on the CLL data"
 author: "Britta Velten and Ricard Argelaguet"
