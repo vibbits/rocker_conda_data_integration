@@ -180,15 +180,3 @@ For MOFA:
 In order to run the complete vignette of MOFA, you have to define a folder on your host where MOFA will write the hdf5 file to.
 
 You can now start the vignette e.g. the [vignette](https://github.com/vibbits/rocker_conda_data_integration/blob/master/MOFA_vignette_course.R)
-
-There are two important settings which you have to adapt so that it works fine in the container.
-
-The variable outfile of the list DirOptions should be set to ``` /home/rstudio/kitematic/<name of model>.hdf5```. In this case, the model file is written to the directory specified when starting the container. In our case this is the current working directory but we specify the folder within the container in DirOptions!
-
-```
-DirOptions <- list(
-  "dataDir" = tempdir(), # Directory to store the input matrices as .txt files, it can be a temporary folder
-  "outFile" = "/home/rstudio/kitematic/model.hdf5" # Output file of the model (use hdf5 extension)
-)
-```
-Now, MOFA should run and create the hdf5 file in the specified directory.
