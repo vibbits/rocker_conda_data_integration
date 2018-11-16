@@ -177,6 +177,6 @@ Please visit their web site for a comprehensive overview: [http://mixomics.org/]
 Example scripts can be downloaded [here](http://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=info:doi/10.1371/journal.pcbi.1005752.s002)
 
 For MOFA:
-In order to run the complete vignette of MOFA, you have to define a folder on your host where MOFA will write the hdf5 file to.
+In order to run the complete vignette of MOFA [vignette](http://htmlpreview.github.io/?https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.html)
+We reccomand that you download the vignette Rmd file: (https://github.com/vibbits/rocker_conda_data_integration/blob/master/MOFA_example.Rmd)
 
-You can now start the vignette e.g. the [vignette](http://htmlpreview.github.io/?https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.html)
