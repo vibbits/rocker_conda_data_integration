@@ -177,6 +177,6 @@ Please visit their web site for a comprehensive overview: [http://mixomics.org/]
 Example scripts can be downloaded [here](http://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=info:doi/10.1371/journal.pcbi.1005752.s002)
 
 For MOFA:
-In order to run the complete vignette of MOFA [vignette](http://htmlpreview.github.io/?https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.html)
-We reccomand that you download the vignette Rmd file: (https://github.com/vibbits/rocker_conda_data_integration/blob/master/MOFA_example.Rmd)
+In order to run the complete vignette of MOFA [vignette](http://htmlpreview.github.io/?https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.html),
+we recommend that you download the vignette Rmd file: (https://github.com/vibbits/rocker_conda_data_integration/blob/master/MOFA_example.Rmd)
 
