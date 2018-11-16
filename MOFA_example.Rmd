@@ -34,20 +34,20 @@ MOFAobject
 ## Option 2: bioconductor approach
 If using the Bioconductor approach, you need to provide or create a [MultiAssayExperiment](https://bioconductor.org/packages/release/bioc/html/MultiAssayExperiment.html) object and then use it to build the MOFA object. For example, starting from a list of matrices where features are rows and samples are columns, this can be easily constructed as follows:
 ```{r}
-library(MultiAssayExperiment)
-# Load data
-# import list with mRNA, Methylation, Drug Response and Mutation data. 
-data("CLL_data") 
-# check dimensionalities, samples are columns, features are rows
-lapply(CLL_data, dim) 
-# Load sample metadata: Sex and Diagnosis
-data("CLL_covariates")
-head(CLL_covariates)
-# Create MultiAssayExperiment object 
-mae_CLL <- MultiAssayExperiment(
-  experiments = CLL_data, 
-  colData = CLL_covariates
-)
+# library(MultiAssayExperiment)
+# # Load data
+# # import list with mRNA, Methylation, Drug Response and Mutation data. 
+# data("CLL_data") 
+# # check dimensionalities, samples are columns, features are rows
+# lapply(CLL_data, dim) 
+# # Load sample metadata: Sex and Diagnosis
+# data("CLL_covariates")
+# head(CLL_covariates)
+# # Create MultiAssayExperiment object 
+# mae_CLL <- MultiAssayExperiment(
+#   experiments = CLL_data, 
+#   colData = CLL_covariates
+# )
 # Build the MOFA object
 MOFAobject <- createMOFAobject(mae_CLL)
 MOFAobject
@@ -154,7 +154,7 @@ save(MOFAobject, file = "/home/rstudio/kitematic/model.hdf5")
 # Loading an existing trained model
 filepath <- system.file("extdata", "CLL_model.hdf5",
                         package = "MOFAtools")
-MOFAobject <- loadModel(filepath)
+MOFAobject <- loadModel(filepath, MOFAobject)
 MOFAobject
 ```
 
@@ -194,9 +194,9 @@ For example, here we plot all weights from all factors in the Mutations data:
 ```{r}
 plotWeightsHeatmap(
   MOFAobject, 
-  view = "Mutations", 
+  view = "Mutations", # change here to "grugs"" for example, and see what happen
   factors = 1:5,
-  show_colnames = FALSE
+  show_colnames = TRUE
 )
 ```
 We observe that Factors 1 and 2 have large non-zero weights. To explore a given factor in more detail we can  plot all weights for a single factor using the `plotWeights` function.
@@ -214,7 +214,7 @@ Features with large (absolute) weight on a given factor follow the pattern of co
 If you are only interested in looking at only the top features you can use the `plotTopWeights` function.  
 For example, here we plot the mutations with largest loadings on Factor 1. The sign on the right indicates the direction of the loading (positive/negative).
 ```{r}
-plotTopWeights(MOFAobject, "Mutations", 2)
+plotTopWeights(MOFAobject, "Mutations", 1)
 ```
 Again, features with large weight in a given factor means that they follow the pattern of covariation associated with the factor. For example, here the factor is associated with the B-cell of tumour's origin, consistent with a large weight on the IGHV status (see our manuscript for more details).  
 
