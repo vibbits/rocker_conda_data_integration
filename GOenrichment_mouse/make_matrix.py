@@ -21,12 +21,16 @@ def writeMatrix(genes, gos, use_description=False):
     print(','.join(header))
 
     for go in gos['go']:
-        desc = genes[genes.go == go]['desc'].values[0]
+        found_genes = genes[genes.go == go]
+        if len(found_genes) == 0:
+            continue
+        
+        desc = found_genes['desc'].values[0]
         if use_description:
             row = [desc]
         else:
             row = [go]
-        genesWithGo = list(genes[genes.go == go]['gene_id'])
+        genesWithGo = list(found_genes['gene_id'])
         for geneId in uniqueGenes:
             row.append('1' if geneId in genesWithGo else '0')
         print(','.join(row))
