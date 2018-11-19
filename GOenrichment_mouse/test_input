@@ -1,0 +1,9 @@
+BINCODE	NAME	IDENTIFIER	DESCRIPTION	TYPE
+0	control genes			
+1.0	name_1	gene_A	desc_D1	T
+1.0.1	name_1_sub1	gene_B	desc_D2	T
+1.1.0	name1_sub2	gene_A	desc_D3	T
+1.1.1	name1_subsub	gene_A	desc_D4	T
+1.1.1	name1_subsubsub	gene_B	desc_D5	T
+1.1.1	name1_subsubsubsub	gene_C	desc_D6	T
+1.0	name1_sub0	gene_C	desc_D7	T
