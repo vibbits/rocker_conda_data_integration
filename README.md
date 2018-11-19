@@ -127,6 +127,23 @@ Digest: sha256:86303d2766ab5dd75698f97e8427f41ab104f2ba7d5db9c771c0e31c9610ea12
 Status: Downloaded newer image for vibbioinfocore/rocker_conda_data_integration:latest
 ```
 
+On Windows, it is possible that you get an error message when you launch the pull command. It complains about the fact that 
+our container is 'linux' based and cannot be run on Windows.
+Please check the setting described here: https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers
+
+Furthermore, the Windows user (the one you log in to the computer) should be member of the User group 'Docker Users' - please see here: 
+You need to add your logon account to Windows group, docker-users. Docker for Window will create this group automatically when docker for Windows is installed.
+```
+Steps:
+
+Logon to Windows as Administrator
+Go to Windows Administrator Tools
+Look for Windows Computer Management and click on it.
+Or you can skip steps 1, right mouse clicking Computer Management, go to more, and select run as administrator and provide Administrator password.
+Double click docker-users group and add your account as member.
+Log off from Windows and log back on as normal user.
+```
+
 
 # About the tutorial with the container rocker_conda_data_integration
 Docker container on rocker/tidyverse with miniconda3 to run various  data integration tools
@@ -165,6 +182,9 @@ docker run -e PASSWORD=yourpassword -p 8787:8787 -v %cd%:/home/rstudio/kitematic
 ```
 
 On your host, it is using the current working directory as reference folder and maps it to the folder /home/rstudio/kitematic within the container. Note: on the specified folder on your host, you have to have read and write access.
+
+This means that you have to note down the working directory when you open the Windows command prompt or the Linux or Mac terminal.
+On Windows, the current working directory is ```C:\Users\your_user_account\```. On Mac, it is ```Users/your_user_account/```.
 
 Once you have started the docker instance, you are ready to go by surfing to http://localhost:8787 or eventually http://0.0.0.0:8787 - the login is rstudio and the chosen password.
 
