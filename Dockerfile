@@ -34,5 +34,6 @@ install.packages('reticulate'); \
 source('http://bioconductor.org/biocLite.R'); \
 biocLite(c('AnnotationDbi', 'impute', 'GO.db', 'org.Mm.eg.db', 'preprocessCore', 'MultiDataSet', 'MultiAssayExperiment', 'pcaMethods')); \
 devtools::install_github('BioFAM/MOFA', subdir='MOFAtools'); \
+devtools::install_github('mathelab/IntLIM'); \
 install.packages('WGCNA'); \
 install.packages('mixOmics'); "
