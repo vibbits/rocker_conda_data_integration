@@ -200,7 +200,13 @@ For MOFA:
 In order to run the complete vignette of MOFA [vignette](http://htmlpreview.github.io/?https://github.com/bioFAM/MOFA/blob/master/MOFAtools/vignettes/MOFA_example_CLL.html),
 we recommend that you download the vignette Rmd file: (https://github.com/vibbits/rocker_conda_data_integration/blob/master/MOFA_example.Rmd)
 
+Further Analysis:
 Normally the data integration process yields a list of (ranked) candidate genes (/modules/clusters). To gain further biological insights Gene Ontology and Pathway enrichments downstream analyses are desired.
-fgsea - Functional Annotation Protocol
-We recently added the fgsea (https://github.com/ctlab/fgsea) which is An R-package for fast preranked gene set enrichment analysis (GSEA). The package implements a special algorithm to calculate the empirical enrichment score null distributions simulthaneously for all the gene set sizes, which allows up to several hundred times faster execution time compared to original Broad implementation. See the preprint for algorithmic details.
-To run fgsea, one will need to download the R scripts: 
+To do so we added to this docker image the fgsea packge (https://github.com/ctlab/fgsea), designed for fast preranked gene set enrichment analysis (GSEA). The package implements a special algorithm to calculate the empirical enrichment score null distributions simulthaneously for all the gene set sizes, which allows up to several hundred times faster execution time compared to original Broad implementation. See the preprint for algorithmic details.
+
+To use the fgsea, one could use the follwoing R commands: 
+```
+R comand
+```
+
+Below there is 
