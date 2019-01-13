@@ -27,7 +27,7 @@ RUN chmod +x /usr/bin/tini
 ENV PATH /opt/conda/bin:$PATH
 RUN conda config --add channels conda-forge
 
-RUN pip install git+git://github.com/BioFAM/MOFA
+RUN pip install mofapy
 
 RUN R -e " \
 install.packages('reticulate'); \
